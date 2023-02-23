@@ -36,6 +36,7 @@ export default {
 <style>
 .block {
     width: 350px;
+    height: auto;
     border-radius: 20px;
     background: #0faf87;
     color: #181818;

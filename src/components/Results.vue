@@ -63,7 +63,8 @@ div {
     justify-content: center;
     margin: 10px auto;
     background-color: hsla(160, 100%, 37%, 0.2);
-    width: 95%
+    width: 95%;
+    height: auto;
 }
 
 @media(min-width: 1024px) {

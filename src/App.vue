@@ -1,17 +1,21 @@
 <template>
-  <h1>Test Your Reaction</h1>
-  <button @click="start" :disabled="isPlaying">play</button>
-  <Block v-if="isPlaying" :delay="delay" @reactTime="endGame" />
-  <Results v-if="showResults" :score="score" />
+  <div>
+    <h1>Test Your Reaction</h1>
+    <button @click="start" :disabled="isPlaying">play</button>
+    <Block v-if="isPlaying" :delay="delay" @reactTime="endGame" />
+    <Results v-if="showResults" :score="score" />
+  </div>
+  <Footer />
 </template>
 
 <script>
 
 import Block from './components/Block.vue'
 import Results from './components/Results.vue'
+import Footer from './components/Footer.vue'
 export default {
   name: 'App',
-  components: { Block, Results },
+  components: { Block, Results, Footer },
   data() {
     return {
       isPlaying: false,
@@ -43,6 +47,10 @@ export default {
   text-align: center;
   color: hsla(160, 100%, 37%, 1);
   /* background-color:  hsla(160, 100%, 37%, 0.2); */
+}
+
+div {
+  height: 90vh;
 }
 
 h1 {
