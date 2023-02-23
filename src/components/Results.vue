@@ -18,15 +18,15 @@ export default {
     mounted() {
         if (this.score < 200) {
             this.rank = 'Ninja Fingers!'
-            this.rankIcon = './src/assets/ninja.png'
+            this.rankIcon = './images/ninja.png'
         }
         else if (this.score < 400) {
             this.rank = 'Rapid Reflexes'
-            this.rankIcon = "./src/assets/bunny.png"
+            this.rankIcon = "./images/bunny.png"
         }
         else {
             this.rank = 'Snail pace...'
-            this.rankIcon = "./src/assets/snail.png"
+            this.rankIcon = "./images/snail.png"
         }
     }
 }
