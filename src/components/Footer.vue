@@ -16,6 +16,12 @@ export default {
 
 <style scoped>
 p {
-    color: rgba(235, 235, 235, 0.64);
+    color: rgba(0, 0, 0, 0.64);
+}
+
+@media (prefers-color-scheme: dark) {
+    p {
+        color: rgba(235, 235, 235, 0.64);
+    }
 }
 </style>
